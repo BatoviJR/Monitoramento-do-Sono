@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <title>Formulario Salvo</title>
+</head>
+<body>
+
+    <div>
+        <h1 id="titulo">Monitoramento do Sono</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 id="subtitulo">salvando informações</h2>
+        <br>
+        <br>
+        <br>        
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome">
+            </div>  
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome">
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="idade"><strong>Idade</strong></label>
+            <input type="number" name="idade" id="idade"> 
+
+        </div>
+
+        <div class="campo">
+            <label for="horarioD"><strong>Quantas horas de sono você dorme por noite?</strong></label>
+            <input type="number" name="tempo" id="tempo" required>
+        </div>
+
+        <div class="campo">
+            <label for="horarioD"><strong>Em que horário você dorme?(21, 2, 23, 20, 22, ...)</strong></label>
+            <input type="number" name="horarioD" id="horarioD" required>
+        </div>
+
+        <div class="campo">
+            <label><strong>Quão luminoso fica seu quarto durante seu sono?  [ "muito" (luz acesa ou grande ponto luminoso), "pouco" (pequeno ou nenhum ponto luminoso)]</strong></label>
+            <input type="text" name="luz" id="luz" required>
+        </div>
+        
+        <div class="campo">
+            <br>
+            <label><strong>Anote mais detalhes sobre seu sono</strong></label>
+            <textarea name="detalhes" id="detalhes" cols="30" rows="6"></textarea>
+            <br>
+            <br>
+        </div>
+    </form>
+    <div class="campo">
+        <button id="botao" onclick="analisar()">Analisar</button>
+        <button id="botao" onclick="salvar()">Salvar</button>
+        <button id="botao" onclick="carregar()">Carregar</button>
+        <button id="botao" onclick="limpar()">Limpar</button>
+    </div>
+    
+</body>
+</html>
